@@ -8,37 +8,37 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skeletonZombie_Material
-    second: {fileID: 2100000, guid: bb6734f84f4722744b2e8f80691c58d0, type: 2}
+    second: {fileID: 2100000, guid: 803aca5e4f70a3b43a40b2b5c0e588a3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skeletonZombie_Material1
-    second: {fileID: 2100000, guid: 886b7bcb6e5a74a46aeb375e7b20b86c, type: 2}
+    second: {fileID: 2100000, guid: be4080689ef6d274693549403408af90, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: skeletonZombie_body_diffuse
-    second: {fileID: 2800000, guid: b37f1f0536bbfa542b767940eb2bf03d, type: 3}
+    second: {fileID: 2800000, guid: 5fb0cd57d095a56458deddb5ac59259a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: skeletonZombie_diffuse
-    second: {fileID: 2800000, guid: cf6044a2ac1a5e64b98736cf9b3abe40, type: 3}
+    second: {fileID: 2800000, guid: e300824ba003ee94d964e4685c3fe348, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: skeletonZombie_glow
-    second: {fileID: 2800000, guid: c4418e03db6103b40af446b280664fb7, type: 3}
+    second: {fileID: 2800000, guid: b6c1db1eeed7c574cbddf5be66696e74, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: skeletonZombie_normal
-    second: {fileID: 2800000, guid: 1484cde88655d804587639df14fdcf66, type: 3}
+    second: {fileID: 2800000, guid: 3b64caeaa7c775b4e97bced3cb35ba0a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: skeletonZombie_specular
-    second: {fileID: 2800000, guid: 88f3c03491fee024baf62206f9a2130c, type: 3}
+    second: {fileID: 2800000, guid: da16535c2cef3314fa2e85b12dba3c54, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -64,36 +64,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: mixamo.com
-      takeName: mixamo.com
-      internalID: -203655887218126122
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []

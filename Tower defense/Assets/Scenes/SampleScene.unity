@@ -5240,7 +5240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &975043302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5885,7 +5885,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1219435674}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2018724673}
+        m_TargetAssemblyTypeName: AdminUI, Assembly-CSharp
+        m_MethodName: OcultarMenuPrincipal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2018724673}
+        m_TargetAssemblyTypeName: AdminUI, Assembly-CSharp
+        m_MethodName: MostrarCanvasPrincipal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1219435674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6323,7 +6347,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1298974804}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2018724673}
+        m_TargetAssemblyTypeName: AdminUI, Assembly-CSharp
+        m_MethodName: ReintentarNivel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2018724673}
+        m_TargetAssemblyTypeName: AdminUI, Assembly-CSharp
+        m_MethodName: OcultarMenuGameOver
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1298974804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7016,7 +7064,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1437865267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8360,7 +8408,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1839193259}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2018724673}
+        m_TargetAssemblyTypeName: AdminUI, Assembly-CSharp
+        m_MethodName: MostrarMenuPrincipal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2018724673}
+        m_TargetAssemblyTypeName: AdminUI, Assembly-CSharp
+        m_MethodName: OcultarCanvasPrincipal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1839193259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8855,7 +8927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e36696752d079964ca0adf879c958e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AdminUI
-  CanvasPrincipal: {fileID: 1437865266}
+  CanvasMenuPrincipal: {fileID: 1437865266}
+  CanvasPrincipal: {fileID: 975043301}
   menuGameOver: {fileID: 353837920}
   MenuOlaGanada: {fileID: 1386503929}
   MensajeFinOla: {fileID: 171720657}

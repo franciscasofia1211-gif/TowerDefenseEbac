@@ -1,23 +1,23 @@
 using UnityEngine;
 
-public class Objetivo : MonoBehaviour
+public class Objetivo : MonoBehaviour, IAatacable
 {
     public int vida = 100;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public delegate void ObjetivoDestruido();
+    public event ObjetivoDestruido EnObjetivoDestruido;
     void Update()
     {
         if (vida <= 0)
         {
-            Destroy(this.gameObject);
+            if (EnObjetivoDestruido != null) 
+            {
+                EnObjetivoDestruido();
+            }
+            this.gameObject.SetActive(false);
         }
     }
 
-    public void recibirDaño(int daño = 20)
+    public void RecibirDano(int daño = 20)
     {
         vida -= daño;
     }

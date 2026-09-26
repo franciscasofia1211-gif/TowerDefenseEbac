@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class AdminUI : MonoBehaviour
 {
+    public GameObject CanvasMenuPrincipal;
     public GameObject CanvasPrincipal;
     public GameObject menuGameOver;
     public GameObject MenuOlaGanada;

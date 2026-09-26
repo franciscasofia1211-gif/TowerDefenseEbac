@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class AdminUI : MonoBehaviour
 {
+    public GameObject CanvasMenuPrincipal;
     public GameObject CanvasPrincipal;
     public GameObject menuGameOver;
     public GameObject MenuOlaGanada;
@@ -62,15 +63,6 @@ public class AdminUI : MonoBehaviour
         TextoOleadas.text = $"Ola: {referenciaSpawner.oleada}";
         OcultarMenuOlaGanada();
     }
-
-    public void MostrarMenuFinOleada()
-    {
-
-    }
-    public void OcultarMenuFinOleada()
-    {
-
-    }
     public void MostrarMenuGameOver()
     {
         menuGameOver.SetActive(true);
@@ -78,6 +70,22 @@ public class AdminUI : MonoBehaviour
     public void OcultarMenuGameOver()
     {
         menuGameOver.SetActive(false);
+    }
+    public void MostrarMenuPrincipal()
+    {
+        CanvasMenuPrincipal.SetActive(true);
+    }
+    public void OcultarMenuPrincipal()
+    {
+        CanvasMenuPrincipal.SetActive(false);
+    }
+    public void MostrarCanvasPrincipal()
+    {
+        CanvasPrincipal.SetActive(true);
+    }
+    public void OcultarCanvasPrincipal()
+    {
+        CanvasPrincipal.SetActive(false);
     }
     public void FinalizarJuego()
     {

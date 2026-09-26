@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Objetivo : MonoBehaviour
+public class Objetivo : MonoBehaviour, IAatacable
 {
     public int vida = 100;
     public delegate void ObjetivoDestruido();
@@ -13,11 +13,11 @@ public class Objetivo : MonoBehaviour
             {
                 EnObjetivoDestruido();
             }
-            Destroy(this.gameObject);
+            this.gameObject.SetActive(false);
         }
     }
 
-    public void recibirDaño(int daño = 20)
+    public void RecibirDano(int daño = 20)
     {
         vida -= daño;
     }

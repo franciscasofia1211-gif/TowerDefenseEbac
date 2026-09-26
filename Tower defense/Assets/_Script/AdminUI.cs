@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,17 +6,63 @@ public class AdminUI : MonoBehaviour
 {
     public GameObject CanvasPrincipal;
     public GameObject menuGameOver;
+    public GameObject MenuOlaGanada;
+    public GameObject MensajeFinOla;
     public Spawner referenciaSpawner;
     public Objetivo referenciaObjetivo;
+    public AdminJuego referenciaAdminJuego;
+    public TMPro.TMP_Text TextoRecursos;
+    public TMPro.TMP_Text TextoOleadas;
+    public TMPro.TMP_Text TextoEnemigos;
+    public TMPro.TMP_Text TextoJefes;
 
     private void OnEnable()
     {
         referenciaObjetivo.EnObjetivoDestruido += MostrarMenuGameOver;
+        referenciaSpawner.EnOleadaIniciada += ActualizarOla;
+        referenciaSpawner.EnOleadaTerminada += MostrarMensajeUltimoEnemigo;
+        referenciaSpawner.EnOleadaGanada += MostrarMenuOlaGanada;
+        referenciaAdminJuego.enRecursosModificados += ActualizarRecursos;
     }
     private void OnDisable()
     {
         referenciaObjetivo.EnObjetivoDestruido -= MostrarMenuGameOver;
+        referenciaSpawner.EnOleadaIniciada -= ActualizarOla;
+        referenciaSpawner.EnOleadaTerminada -= MostrarMensajeUltimoEnemigo;
+        referenciaSpawner.EnOleadaGanada -= MostrarMenuOlaGanada;
+        referenciaAdminJuego.enRecursosModificados -= ActualizarRecursos;
     }
+
+    private void ActualizarRecursos()
+    {
+        TextoRecursos.text = $"Recursos: {referenciaAdminJuego.Recursos}";
+    }
+
+    private void MostrarMensajeUltimoEnemigo()
+    {
+        MensajeFinOla.SetActive(true);
+        Invoke("OcultarMensajeUltimoEnemigo", 3f);
+    }
+    private void OcultarMensajeUltimoEnemigo()
+    {
+        MensajeFinOla.SetActive(false);
+    }
+    private void MostrarMenuOlaGanada()
+    {
+        TextoEnemigos.text = $"ENEMIGOS: \t {referenciaAdminJuego.EnemigosBaseDerrotados}";
+        TextoJefes.text = $"Jefes: \t\t {referenciaAdminJuego.EnemigosJefeDerrotados}";
+        MenuOlaGanada.SetActive(true);
+    }
+    public void OcultarMenuOlaGanada()
+    {
+        MenuOlaGanada.SetActive(false);
+    }
+    private void ActualizarOla()
+    {
+        TextoOleadas.text = $"Ola: {referenciaSpawner.oleada}";
+        OcultarMenuOlaGanada();
+    }
+
     public void MostrarMenuFinOleada()
     {
 
